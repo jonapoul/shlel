@@ -1,6 +1,12 @@
-#ifndef SHLEL_SHLEL_H
-#define SHLEL_SHLEL_H
+#ifndef SHLEL_H
+#define SHLEL_H
 
-int x;
+#include <stdlib.h>
+#include <stdio.h>
+
+void    shlel_loop(void);
+char *  shlel_read_line(void);
+char ** shlel_split_line(char * line);
+int     shlel_execute(char ** args);
 
 #endif

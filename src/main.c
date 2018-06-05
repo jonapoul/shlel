@@ -7,5 +7,5 @@ int main(int argc, char ** argv) {
    shlel_loop();
 
    /* shutdown/cleanup */
-   return 0;
+   return EXIT_SUCCESS;
 }

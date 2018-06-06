@@ -1,7 +1,8 @@
 #include "shlel.h"
 
 int main(int argc, char ** argv) {
-   /* load config files */
+   /* configure */
+   shlel_set_functions();
 
    /* command loop */
    shlel_loop();

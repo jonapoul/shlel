@@ -26,8 +26,8 @@ typedef struct func_s {
    int (*func) (char **);
 } shlel_func_t;
 
-int shlel_set_built_in();
-shlel_func_t * built_in;
-int num_built_in;
+void shlel_set_functions();
+shlel_func_t * functions;
+int num_functions;
 
 #endif

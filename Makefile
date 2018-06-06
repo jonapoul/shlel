@@ -17,7 +17,8 @@ EXEC := shlel
 all: $(EXEC)
 
 $(EXEC): $(OBJ) | dir
-	$(LD) -o $(BINDIR)/$@ $(OBJ)
+	$(CC) $(CCFLAGS) $(INC) main.c -o $(OBJDIR)/main.o
+	$(LD) -o $(BINDIR)/$@ $(OBJ) $(OBJDIR)/main.o
 
 dir:
 	@mkdir -p $(OBJDIR)
@@ -33,4 +34,4 @@ diff:
 rebuild: clean $(EXEC)
 
 $(OBJDIR)/%.o: $(SRCDIR)/%.c | dir
-	$(CC) $(CCFLAGS) $(INC) -c $< -o $@
+	$(CC) $(CCFLAGS) $(INC) $< -o $@

@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 #include "shlel.h"
 
 char * shlel_read_line(void) {

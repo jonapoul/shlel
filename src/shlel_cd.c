@@ -1,3 +1,6 @@
+#include <unistd.h>
+#include <stdio.h>
+
 #include "shlel.h"
 
 int shlel_cd(char ** args){

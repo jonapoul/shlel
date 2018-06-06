@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
 #include "shlel.h"
 
 #define SHLEL_TOK_BUFSIZE 1024

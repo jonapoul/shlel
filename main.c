@@ -1,3 +1,5 @@
+#include <stdlib.h>
+
 #include "shlel.h"
 
 int main(int argc, char ** argv) {

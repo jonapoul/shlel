@@ -1,3 +1,6 @@
+#include <stdlib.h>
+#include <string.h>
+
 #include "shlel.h"
 
 static void shlel_set_func(char * const name,
@@ -7,7 +10,7 @@ static void shlel_set_func(char * const name,
    sft->func = func;
 }
 
-void shlel_set_functions() {
+void shlel_set_functions(void) {
    num_functions = 3;
    functions = malloc(sizeof(shlel_func_t) * num_functions);
    shlel_set_func("cd",   &shlel_cd,   &functions[0]);

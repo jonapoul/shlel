@@ -1,3 +1,5 @@
+#include <string.h>
+
 #include "shlel.h"
 
 int shlel_execute(char ** args) {
